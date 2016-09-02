@@ -55,28 +55,27 @@ See programs/sample.txt for an example. This is the point cloud of the
 	c2, w0, w1, ... wd
 	  ...
 
-  where b and d are the endpoints of the persistence interval
-	of this generator, and the following lines contain information about the
-	computed optimal cycle corresponding to it, and are to be read in the
-	following way.
-	
-	A cycle is a linear combination of simplices.
-	Each line represents a term in this linear combination. The first term is the
-	coefficient, and the remaining (d+1) numbers are the (d+1) vertices of
-	the d-simplex.
+where b and d are the endpoints of the persistence interval
+of this generator, and the following lines contain information about
+the computed optimal cycle corresponding to it, and are to be read
+in the following way.
 
-	Vertices are given by index numbers, which are to be interpreted in terms of
-	the index-to-point output.
-	WARNING: index numbers DO NOT correspond to the order of the points in the input file. 
+A cycle is a linear combination of simplices. Each line represents a
+term in this linear combination. The first term is the coefficient,
+and the remaining (d+1) numbers are the (d+1) vertices of the
+d-simplex, where d is the chosen dimension to compute in.
 
-	Note that each generator starts with a semicolon (;).
+Vertices are given by index numbers, which are to be interpreted in
+terms of the index-to-point output. WARNING: index numbers DO NOT
+correspond to the order of the points in the input file.
+
+Note that each generator starts with a semicolon (;).
 
 2. Index-to-point (i2p)
 
-	 This is a list of quintuples:
-	 i x y z w
-
-	 where (x,y,z,w) is an input weighted point, and i is its corresponding index number.
+This is a list of quintuples: i x y z w
+where (x,y,z,w) is an input weighted point, and i is its corresponding
+index number.
 
 * License *
 OptiPersLP is free software: you can redistribute it and/or modify
