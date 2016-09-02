@@ -93,10 +93,15 @@ Persistence::Persistence<double,double> do_optipers(Bdd_Type& bdd_matrix,
   // **************************************************  
   std::cerr << "Computing Persistence...\n";  
   for (unsigned int j = 0; j < filtration_size; ++j) {
+    #ifndef DEBUG
     std::cerr << "\r" << j << "/" << filtration_size;
-    std::cerr.flush(); 
+    std::cerr.flush();
+    #endif
     
-    if (cycles.size() != 0 and (opt_immediately or std::get<1>(alpha_map.at(j)) != current_birth)) {      
+    if (cycles.size() != 0 and (opt_immediately or std::get<1>(alpha_map.at(j)) != current_birth)) {
+      #ifdef DEBUG
+      std::cerr << "Optimizing cycle immediately!\n";
+      #endif
       op_prob.standard_optimizer(cycles, basis);
       cycles.clear();     
     }       

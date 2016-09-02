@@ -211,7 +211,7 @@ int main(int argc, char** argv) {
     exit(1);
   }
 
-  Persistence::Persistence<double,double> pers = do_optipers(bdd_matrix, alpha_map, target_dim, false);
+  Persistence::Persistence<double,double> pers = do_optipers(bdd_matrix, alpha_map, target_dim, opt_immediately);
   bool success = pers.write_file_dim(gen_file_p.string(), target_dim);
 
   if (!success) {
