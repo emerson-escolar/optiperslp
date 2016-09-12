@@ -34,7 +34,9 @@ class MapChain{
   typedef int IndexType;
   typedef T value_type;
   typedef typename std::map<int, T>::const_iterator const_iterator;
-		
+
+  MapChain() {};
+  
   std::set<int> get_nonzeros()const;
   int get_pivot()const;
 

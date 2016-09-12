@@ -135,7 +135,7 @@ bool MapChain<T>::operator==(const MapChain<T>& other)const{
 
 template<typename T>
 bool MapChain<T>::operator!=(const MapChain<T>& other)const{
-  return ~(this->operator==(other));
+  return not (this->operator==(other));
 }
 
 template<typename T>
