@@ -12,6 +12,11 @@ OptiPersLP - optimal cycles in persistence via linear programming.
 3. BOOST
 4. .. and their respective dependencies
 
+UPDATE: Some backward-incompatible changes have been introduced in 
+a recent CGAL version. OptiPersLP currently does not compile with the newest CGAL.
+Last version known to work: CGAL 4.9
+A fix is being prepared.
+
 * Build and compilation *
 1a. If you cloned the project:
   * autoreconf --install
