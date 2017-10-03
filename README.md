@@ -18,23 +18,21 @@
 	* BOOST
 	* .. and their respective dependencies
 #### Build
-* If you downloaded the distribution package from the [download page](https://bitbucket.org/remere/optiperslp/downloads/):
+* If you downloaded the distribution package from the [download page](https://bitbucket.org/remere/optiperslp/downloads/):  
+    Navigate to directory and do the usual
+	
+		./configure
+		make
+		make check
 
-    Navigate to directory and do the usual:
-	```
-	./configure  
-	make  
-	make check  
-	```
 
 * If you cloned the project:
 
-	```
-	autoreconf --install  
-	./configure  
-	make  
-	make check  
-	```
+		autoreconf --install
+		./configure
+		make
+		make check
+	
 
 * For advanced configuration, see: ```./configure --help```
 
@@ -48,8 +46,8 @@ the input point cloud.
 #### Input
 Input file is in the format of:
 ```
-x1 y1 z1 r1  
-x2 y2 z2 r2  
+x1 y1 z1 r1
+x2 y2 z2 r2
 ...
 ```
 corresponding to 3d coordinates (x,y,z) and weights (r) of the weighted point cloud.
@@ -62,13 +60,13 @@ See programs/sample.txt for an example. This is the point cloud of the
 
 #### Output Files
 1. Generators  
-   Each persistence generator is encoded by the following format:  
-   ```
-   ; b d  
-   c1, v0, v1, ... vd  
-   c2, w0, w1, ... wd  
-   ...  
-   ```
+   Each persistence generator is encoded by the following format:
+   
+		; b d
+		c1, v0, v1, ... vd
+		c2, w0, w1, ... wd
+		...
+   
 
 	where b and d are the endpoints of the persistence interval of this generator, and the following lines contain information about the computed optimal cycle corresponding to it, and are to be read in the following way.
 
@@ -81,7 +79,7 @@ See programs/sample.txt for an example. This is the point cloud of the
 2. Index-to-point (i2p)  
    This is a list of quintuples:  
    ```
-   i x y z r  
+   i x y z r
    ```  
    where (x,y,z,r) is an input weighted point, and i is its corresponding index number.
 
