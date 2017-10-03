@@ -1,5 +1,5 @@
 
-AC_INIT([OptiPersLP],[1.1],[eescolar@math.kyushu-u.ac.jp])
+AC_INIT([OptiPersLP],[1.2],[escolar.emerson.gaw.d6@tohoku.ac.jp])
 AM_INIT_AUTOMAKE([foreign -Wall -Werror subdir-objects])
 
 AM_PROG_AR
