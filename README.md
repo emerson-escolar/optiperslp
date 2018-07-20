@@ -11,9 +11,10 @@
 	* libtool
 	* Python
 * Dependencies
-	* CGAL: 4.11 or newer  
+	* CGAL: 4.11
 		*If you want to use an older version of CGAL, try version 1.1
 		[(download page)](https://bitbucket.org/remere/optiperslp/downloads/). This version was last known to work with CGAL 4.9.1*
+		*UPDATE: Some backward-incompatible changes have been introduced in CGAL 4.12. OptiPersLP currently does not compile with the newest CGAL.*
 	* GLPK
 	* BOOST
 	* .. and their respective dependencies
