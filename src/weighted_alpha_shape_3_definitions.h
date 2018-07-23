@@ -27,6 +27,8 @@
    addon alpha_3.cpp, but modified to handle weighted alpha shapes.
 */
 
+#include <CGAL/Alpha_shape_vertex_base_3.h>
+
 
 typedef int Dim;
 typedef int Index;
