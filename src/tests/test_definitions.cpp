@@ -2,7 +2,7 @@
 #include "common_definitions.h"
 
 TEST_CASE( "Test DimAlpha typedef" , "[typedefs]" ) {
-  REQUIRE_NOTHROW( DimAlpha_Type an_alpha_entry(-1, 0.0001, "foo"); );
+  REQUIRE_NOTHROW( DimAlpha_Type{-1, 0.0001, "foo"} );
     
   DimAlpha_Type an_alpha_entry(-1, 0.0001, "foo");
   REQUIRE_NOTHROW( std::get<0>(an_alpha_entry) );

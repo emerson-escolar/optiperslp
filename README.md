@@ -102,5 +102,5 @@ If not, see <http://www.gnu.org/licenses/>.
 
 ##### Bundled Software
 
-OptiPersLP comes with the single-header version of the [Catch](https://github.com/philsquared/Catch) testing framework, which is under the Boost software license. 
+OptiPersLP comes with the single-header version of the [Catch](https://github.com/catchorg/Catch2) testing framework, which is under the Boost software license. 
 
