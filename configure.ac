@@ -8,7 +8,7 @@ LT_INIT
 AC_PROG_CXX
 AC_CONFIG_MACRO_DIRS([m4])
 
-AX_CXX_COMPILE_STDCXX_11(,[mandatory])
+AX_CXX_COMPILE_STDCXX([14], ,[mandatory])
 
 AC_CONFIG_HEADERS([config.h])
 
