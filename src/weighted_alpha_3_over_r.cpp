@@ -441,7 +441,7 @@ get_weighted_alpha_3_over_r(std::istream& is) {
     }
     alpha_map[curr_index] =
         std::make_tuple(it->second,
-                        it->first.exact().to_double(),
+                        it->first.exact().convert_to<double>(),
                         cell_code);
         
     ++curr_index;
