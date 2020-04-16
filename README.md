@@ -6,14 +6,15 @@
 
 #### Prerequisites
 * Tools needed
-	* A working C++ compiler that supports C++11.
+	* A working C++ compiler that supports C++14.
 	* GNU build system (autotools)
 	* libtool
 	* Python
 * Dependencies
-	* CGAL: 4.11 or newer
-		*If you want to use an older version of CGAL, try version 1.1
-		[(download page)](https://bitbucket.org/remere/optiperslp/downloads/). Version 1.1 was last known to work with CGAL 4.9.1*		
+	* CGAL: 5.0.1 or newer.
+    If you want to use an older version of CGAL, try an older version from the [download page](https://bitbucket.org/remere/optiperslp/downloads/). 
+        * Version 1.1 (around CGAL 4.9.1)
+        * Version 1.2.1 (up to CGAL 4.14)
 	* GLPK
 	* BOOST
 	* .. and their respective dependencies

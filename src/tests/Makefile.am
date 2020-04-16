@@ -8,6 +8,6 @@ test_optipersprob.cpp \
 test_full.cpp
 
 test_all_optiperslib_CPPFLAGS = -I$(srcdir)/../ -I$(srcdir)/../../catch/
-test_all_optiperslib_LDADD = ../liboptiperslp.la -lCGAL -lgmp -lglpk -lmpfr 
+test_all_optiperslib_LDADD = ../liboptiperslp.la -lgmp -lglpk -lmpfr
 
 TESTS = $(check_PROGRAMS)
