@@ -66,7 +66,7 @@ if __name__ == "__main__":
         opts, args = getopt.getopt(sys.argv[1:], "p:r:s:") 
     except getopt.GetoptError as err:
         # print help information and exit:
-        print str(err) # will print something like "option -a not recognized"
+        print(str(err)) # will print something like "option -a not recognized"
         usage()
         sys.exit(2)        
         
