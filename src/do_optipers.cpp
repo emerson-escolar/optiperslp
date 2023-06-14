@@ -1,5 +1,6 @@
 #include "do_optipers.h"
 #include <numeric>
+#include <algorithm>
 
 /*  
     By: Emerson Escolar
