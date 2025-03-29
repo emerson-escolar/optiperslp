@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
-import unittest
-
-# nothing yet... 
+# nothing yet...
+# import unittest
 if __name__ == '__main__':
-    unittest.main()
+    pass
+    # unittest.main()
